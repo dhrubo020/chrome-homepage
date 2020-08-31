@@ -106,7 +106,7 @@
                             
                           <input type="text" class="input-form" id="input" placeholder=" Search Google" required>
                         </div>
-                        <button type="submit" onclick="search()" class="btn btn-primary">Search</button>
+                        <button type="submit" id="search" class="btn btn-primary">Search</button>
                       </form>
                 </div>
                 </center>
@@ -114,8 +114,8 @@
                 <div class="reminder">
                     <form action="">
                         <input type="text" class="input-note" id="note" placeholder="Add note">
-                        <button type="submit" onclick="addNew()" class="btn" id="addNotebutton">Add</button>
-                        <button type="submit" onclick="clearAll()" class="btn" id="addNotebutton">Clear All</button>
+                        <button type="submit" id="addNew" class="btn" id="addNotebutton">Add</button>
+                        <button type="submit" id="clearAll" class="btn" id="addNotebutton">Clear All</button>
                     </form>
                     <div class="note-list">
                         <ol id="list-item">
@@ -128,64 +128,6 @@
     </div>
 
 
-<script>
-
-    storage();
-    
-    function search(){
-        let topic = document.getElementById("input").value;
-        window.open(`https://www.google.com/search?q=${topic}`, '_blank');
-    }
-
-    function addNew(){
-        let inputNote = [];
-        inputNote.push(document.getElementById("note").value);
-        document.getElementById("note").value = "";
-
-        const existingNote = JSON.parse(localStorage.getItem('myNote'));
-        if(existingNote !== null){
-            const addNew = inputNote.concat(existingNote);
-            localStorage.setItem('myNote', JSON.stringify(addNew));
-        }
-        else if(inputNote !== null){
-            localStorage.setItem('myNote', JSON.stringify(inputNote));
-        }
-        storage();
-    }
-    const clearAll = () => {
-        const cnf = confirm("Do you want clear all notes ?")
-        if(cnf){
-            window.localStorage.clear();
-            document.getElementById("list-item").innerHTML = "";
-        }
-        storage();
-    }
-
-    function storage(){
-        const existingNote = JSON.parse(localStorage.getItem('myNote'));
-        //console.log(existingNote);
-        if(existingNote){
-            let data = existingNote;
-            let ul = document.getElementById("list-item");
-            ul.innerHTML = "";
-            console.log(data);
-            data.forEach(element => {
-                if(element){
-                    let item = `<li>${element}</li>`;
-                    ul.innerHTML += item;
-                    console.log(element);
-                }
-            });
-        }
-    }
-
-    
-
-</script>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
