@@ -1,133 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-light">
-            <h4 class="myName">Dn Singha Dhrubo</h4>
-            <a target="_blank" class="navbar-brand ml-auto" href="#">
-              <img class="mypic" src="images/propic1.png" width="70" height="80" alt="" loading="lazy">
+      <nav class="navbar navbar-light">
+        <h4 class="myName">Dn Singha Dhrubo</h4>
+        <a target="_blank" class="navbar-brand ml-auto" href="#">
+          <img
+            class="mypic"
+            src="images/propic1.png"
+            width="70"
+            height="80"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+      </nav>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left d-flex flex-wrap">
+            <!-- gmail -->
+            <a
+              target="_blank"
+              href="https://mail.google.com/mail/u/2/#inbox"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/gmail.jpg" alt="" />
+                </div>
+                <p class="text-center mt-1 text-dark">Gmail</p>
+              </div>
             </a>
-          </nav>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="left d-flex flex-wrap">
-                    <!-- gmail -->
-                    <a target="_blank" href="https://mail.google.com/mail/u/2/#inbox" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/gmail.jpg" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">Gmail</p>
-                        </div>
-                    </a>
-                    <!-- github -->
-                    <a target="_blank" href="https://github.com/" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/github.png" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">Github</p>
-                        </div>
-                    </a>
-                    <!-- youtube -->
-                    <a target="_blank" href="https://youtube.com/" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/youtube.png" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">Youtube</p>
-                        </div>
-                    </a>
-                    <!-- upwork -->
-                    <a target="_blank" href="https://upwork.com/" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/upwork.png" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">Up Work</p>
-                        </div>
-                    </a>
-                    <!-- fast -->
-                    <a target="_blank" href="https://fast.com/" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/fast.png" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">fast.com</p>
-                        </div>
-                    </a>
-                    <!-- drive -->
-                    <a target="_blank" href="https://drive.google.com/" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/gdrive.png" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">Drive</p>
-                        </div>
-                    </a>
-                    <!-- facebook -->
-                    <a target="_blank" href="https://facebook.com/" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/facebook.png" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">Facebook</p>
-                        </div>
-                    </a>
-                    <!-- add new -->
-                    <a href="#" style="text-decoration: none">
-                        <div class="most-visited">
-                            <div class="image">
-                                <img src="images/addnew.png" alt="">
-                            </div>
-                            <p class="text-center mt-1 text-dark">Add New</p>
-                        </div>
-                    </a>
-                    
-
+            <!-- github -->
+            <a
+              target="_blank"
+              href="https://github.com/"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/github.png" alt="" />
                 </div>
-            </div>
-            <div class="col-md-6">
-                <center>
-                    <div class="right">
-                    <div class="google">
-                        <img src="images/google.png" alt="">
-                    </div>
-                    <form action="">
-                        <div class="form-group">
-                            
-                          <input type="text" class="input-form" id="input" placeholder=" Search Google" required>
-                        </div>
-                        <button type="submit" id="search" class="btn btn-primary">Search</button>
-                      </form>
+                <p class="text-center mt-1 text-dark">Github</p>
+              </div>
+            </a>
+            <!-- youtube -->
+            <a
+              target="_blank"
+              href="https://youtube.com/"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/youtube.png" alt="" />
                 </div>
-                </center>
-                <br>
-                <div class="reminder">
-                    <form action="">
-                        <input type="text" class="input-note" id="note" placeholder="Add note">
-                        <button type="submit" id="addNew" class="btn" id="addNotebutton">Add</button>
-                        <button type="submit" id="clearAll" class="btn" id="addNotebutton">Clear All</button>
-                    </form>
-                    <div class="note-list">
-                        <ol id="list-item">
-
-                        </ol>
-                    </div>
+                <p class="text-center mt-1 text-dark">Youtube</p>
+              </div>
+            </a>
+            <!-- upwork -->
+            <a
+              target="_blank"
+              href="https://upwork.com/"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/upwork.png" alt="" />
                 </div>
-            </div>
+                <p class="text-center mt-1 text-dark">Up Work</p>
+              </div>
+            </a>
+            <!-- fast -->
+            <a
+              target="_blank"
+              href="https://fast.com/"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/fast.png" alt="" />
+                </div>
+                <p class="text-center mt-1 text-dark">fast.com</p>
+              </div>
+            </a>
+            <!-- drive -->
+            <a
+              target="_blank"
+              href="https://drive.google.com/"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/gdrive.png" alt="" />
+                </div>
+                <p class="text-center mt-1 text-dark">Drive</p>
+              </div>
+            </a>
+            <!-- facebook -->
+            <a
+              target="_blank"
+              href="https://facebook.com/"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/facebook.png" alt="" />
+                </div>
+                <p class="text-center mt-1 text-dark">Facebook</p>
+              </div>
+            </a>
+            <!-- linkedin -->
+            <a
+              target="_blank"
+              href="https://linkedin.com/"
+              style="text-decoration: none"
+            >
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/linkedin.jpg" alt="" />
+                </div>
+                <p class="text-center mt-1 text-dark">LinkedIn</p>
+              </div>
+            </a>
+            <!-- add new -->
+            <a href="#" style="text-decoration: none">
+              <div class="most-visited">
+                <div class="image">
+                  <img src="images/addnew.png" alt="" />
+                </div>
+                <p class="text-center mt-1 text-dark">Add New</p>
+              </div>
+            </a>
+          </div>
         </div>
+        <div class="col-md-6">
+          <center>
+            <div class="right">
+              <div class="google">
+                <img src="images/google.png" alt="" />
+              </div>
+              <form action="">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="input-form"
+                    id="input"
+                    placeholder=" Search Google"
+                    required
+                  />
+                </div>
+                <button type="submit" id="search" class="btn btn-primary">
+                  Search
+                </button>
+              </form>
+            </div>
+          </center>
+          <br />
+          <div class="reminder">
+            <form action="">
+              <input
+                type="text"
+                class="input-note"
+                id="note"
+                placeholder="Add note"
+              />
+              <button type="submit" id="addNew" class="btn" id="addNotebutton">
+                Add
+              </button>
+              <button
+                type="submit"
+                id="clearAll"
+                class="btn"
+                id="addNotebutton"
+              >
+                Clear All
+              </button>
+            </form>
+            <div class="note-list">
+              <ol id="list-item"></ol>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
